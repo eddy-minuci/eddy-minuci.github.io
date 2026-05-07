@@ -1,0 +1,33 @@
+# --- Private project content (do not publish) ---
+business_plan/
+log/
+Eddy-voice/
+CLAUDE.md
+FIRST_PROMPT.md
+SETUP_CHECKLIST.md
+
+# --- Claude / AI tooling config ---
+.claude/
+
+# --- OS / editor artifacts ---
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# --- Plan / scratch files ---
+*.draft
+*.scratch
+
+# --- Files directory: only the CV PDF is public ---
+# Defensive: block all PDFs in files/ by default, whitelist cv.pdf below.
+# This protects against accidentally publishing publisher-copyrighted paper PDFs.
+files/*.pdf
+!files/cv.pdf
+
+# Unused / archive media (not referenced in index.html)
+files/headshot_ncat.jpeg
+files/headshot_ncat_converted.jpeg
+files/headshot_wvu.jpg
+files/linkedin.html
