@@ -770,6 +770,15 @@ img {
     grid-template-columns: 1fr;
   }
 
+  /* Course rows are name-left / detail-right, which read fine while the right
+     side said "Online". Section counts and enrollment ranges (added 2026-09-09)
+     push both halves to three or four wrapped lines that meet with no gap.
+     Stack them below 768px so the detail sits under the course name. */
+  .course-item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
   .consulting-services {
     grid-template-columns: 1fr;
   }
