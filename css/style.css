@@ -331,8 +331,11 @@ img {
   overflow-wrap: break-word;
 }
 
+/* #6b7a8d measured 3.97:1 on the dark Research background, below the 4.5:1
+   WCAG AA floor for text this size. #8892A4 is the adjacent .pub-journal
+   colour and measures 5.54:1. Changed 2026-09-11. */
 .pub-coauthors {
-  color: #6b7a8d;
+  color: #8892A4;
   font-size: 0.88rem;
 }
 
@@ -365,6 +368,23 @@ img {
 .pillar-card p {
   font-size: 0.95rem;
   color: #4a4d5e;
+}
+
+/* Prose block between the pillar grid and the course tables. Constrained to a
+   readable measure because .section-inner runs to 1100px and a full-width
+   paragraph there is roughly 130 characters per line. */
+.teaching-bridge {
+  margin-top: 2.5rem;
+  max-width: 760px;
+}
+
+.teaching-bridge h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.teaching-bridge p {
+  margin-bottom: 1.2rem;
 }
 
 .courses-list {
