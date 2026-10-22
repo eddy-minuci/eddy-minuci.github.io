@@ -439,6 +439,72 @@ img {
   line-height: 1.6;
 }
 
+/* --- Data Hub cards (AI Workflow section, added 2026-10-22) --- */
+/* Compact variant of .service-card. Flex is scoped to .hub-card so Mentoring's
+   cards keep their existing layout. The description grows, which bottom-aligns
+   the footer row across all three regardless of text length. */
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem 1.4rem;
+}
+
+/* h4 so the heading order stays h2 > h3 > h4 */
+.hub-card h4 {
+  color: #E8915A;
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.service-card.hub-card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.hub-card > p:first-of-type {
+  flex: 1;
+  margin-bottom: 0.9rem;
+}
+
+.hub-foot {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+/* Outlined rather than filled, so it reads as quiet next to the real CTAs. */
+.hub-btn {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #E8915A;
+  background: transparent;
+  border: 1px solid rgba(232, 145, 90, 0.45);
+  border-radius: 5px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.hub-btn:hover {
+  background: rgba(232, 145, 90, 0.14);
+  border-color: rgba(232, 145, 90, 0.8);
+  color: #F0A87A;
+}
+
+.hub-status {
+  font-size: 0.75rem;
+  color: #8892A4;
+}
+
+.hub-soon {
+  color: #E8915A;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
 .consulting-cta {
   text-align: center;
   margin-top: 3rem;
